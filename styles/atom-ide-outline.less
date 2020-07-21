@@ -5,6 +5,13 @@
 @import "ui-variables";
 @import "syntax-variables";
 
+@font-face {
+  font-family: 'symbol-icons';
+  src: url('atom://atom-ide-outline/styles/symbol-icons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .outline-view {
   overflow-y: auto;
 
@@ -52,6 +59,7 @@
   .styleByType(@type, @color) {
     .type-@{type} {
       color: @color;
+      font-family: 'symbol-icons';
     }
 
     .fold-type-@{type} {
